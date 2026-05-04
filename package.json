@@ -1,0 +1,24 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "description": "",
+  "scripts": {
+    "user-service": "npm run dev --workspace=services/user-service",
+    "product-service": "npm run dev --workspace=services/product-service",
+    "order-service": "npm run dev --workspace=services/order-service",
+    "api-gateway": "npm run dev --workspace=services/api-gateway",
+    "notification-service": "npm run dev --workspace=services/notification-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fastify-plugin": "^5.1.0"
+  }
+}
