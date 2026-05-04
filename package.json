@@ -12,7 +12,8 @@
     "product-service": "npm run dev --workspace=services/product-service",
     "order-service": "npm run dev --workspace=services/order-service",
     "api-gateway": "npm run dev --workspace=services/api-gateway",
-    "notification-service": "npm run dev --workspace=services/notification-service"
+    "notification-service": "npm run dev --workspace=services/notification-service",
+    "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "keywords": [],
   "author": "",
